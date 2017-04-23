@@ -1,0 +1,298 @@
+<!-- WNYC style guide at https://wnyc.github.io/#vision -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags for Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--The title of my page -->
+    <title>Note to Self | WNYC</title>
+
+    <!--The description of my page -->
+    <meta name='description' content="Is your phone watching you? Can wexting make you smarter? Are your kids real? These and other essential quandaries facing anyone trying to preserve their humanity in the digital age. Join host Manoush Zomorodi for your weekly reminder to question everything.
+
+        Subscribe to the podcast on iTunes
+        Follow @notetoself on Twitter
+        Got an idea or a pitch? Send it to notetoself@wnyc.org. We love to hear from you.
+
+        Note to Self's logo and all Infomagical illustrations are by artist John Hersey." <meta name="author" content="Alena Maschke, Kasiana McLenaghan and Courtney Vinopal | Columbia University">
+
+    <!-- ADD AN ICON FILE.  
+    <link rel='icon' href='...'>
+    -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!--WNYC-specific stylesheet (STILL NEED TO FILL IN)-->
+    <link rel="stylesheet" href="WNYCstyles.css" />
+
+    <!--Load the AJAX API. This will load up the Google charts scripts that power my visualizations
+        
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="chart_scripts.js"></script>
+    NOTE THAT THIS CODE MAY NOT BE NECESSARY....REVIEW BEFORE POSTING-->
+</head>
+
+<body>
+
+    <!--A note about page layout: WNYC has four views, depending on how large a browser window is.
+            View 1: 1025px and wider. (large)
+            View 2: 800-1024px (medium)
+            View 3: 475-799px (small)
+            View 4: <475px (xs)
+        See https://docs.google.com/a/columbia.edu/document/d/1w-zSNz-ddZbEB8uUftwyjr_lgSdtpljvQKYUYnoP9CY/edit?usp=sharing to see examples of each view.
+        For simplicity's sake, this effort will begin with views 2 and 4, which provide basic mobile and 
+        web views, and expand to additional views as time allows.
+    -->
+
+    <!-- First container - the bright red WNYC bar 
+    (OR IT WILL BE WHEN I FIGURE OUT HOW TO GET IT ABOVE THE NAVBAR ;)
+    <div class='row'>
+        <div class='col'>
+            test
+        </div>
+    </div>
+    -->
+
+    <!-- Second 'container' - the dark red fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.wnyc.org/">Listen Live</a></li>
+                    <li><a href="http://www.wnyc.org/streams">All Streams</a></li>
+                    <li><a href="http://www.wnyc.org/schedule">Schedule</a></li>
+                    <li class="active"><a href="#">Shows</a></li>
+                    <li><a href="http://www.wnyc.org/topics">Topics</a></li>
+                    <li><a href="http://www.wnyc.org/discover/start">Discover</a></li>
+                    <li><a href="http://www.wnyc.org/search">Search</a></li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- Note to Self article page -->
+    <!--This is the bootstrap div.  It needs to contain EVERYTHING in the body -->
+    <div class='container-fluid'>
+
+
+        <!-- Third containter - article + sidebar-->
+        <!-- This row is split 2/3 to the left, containing the article and 1/3 on the right, which is a fixed width sidebar 
+        <div class='row'> -->
+        <!-- Article div -->
+        <!-- <div class='col-lg-8'> -->
+        <!-- a lead article is made up of a title, image, dateline, text,
+                    and author. The rest of the elements are the same on for each article. -->
+
+        <!-- to try and keep this simple, I'm dividing the containers
+                    for my lead article image, which will be the automatically resizing
+                    box with complicated images and buttons, and a separate container
+                    for the body of the article itself-->
+        <!--       <section class='container-fluid'>
+                </section>
+            </div>
+        </div>  -->
+
+
+        <!-- This is the article body container -->
+        <div class='container-fluid'>
+            <div class='row'>
+                <!-- size tells it when to stack 
+                    if the viewport (aka browser window) is less than the 
+                    specified size then the element just takes up the whole screen-->
+                <div class='col-md-8'>
+                    <section class="content" id="article">
+                        <article>
+                            <header class='storyHeaderImage'>
+                                <img alt="Note to Self" class="badge" src="https://media2.wnyc.org/i/50/50/l/99/1/NoteToSelf_1400X1400_TIt7xNg.png" width="50"
+                                    height="50">
+                                <h1 class='h1'>Courtney's Article Title</h1>
+                            </header>
+                            <p class='lead'>Biometric data has made it easier than ever to register and track refugees. But what are the
+                                downsides to a permanent digital footprint?</p>
+
+                            <p>For Mati Afzal, 25, the road to Europe has been a long and dangerous one. Nine years ago, the
+                                young Afghan man found a job as an interpreter for the U.S. army. He enjoyed the work, and
+                                was content living in Kabul, where he grew up.</p>
+
+                            <p>“When I was back in Afghanistan, I was working with Americans, and I had a very good job, very
+                                good salary,” said Afzal. “I was very happy.”</p>
+
+                            <p>But Afzal soon learned that in a country where the Taliban still wields a considerable amount
+                                of influence and power, working for a foreign government like the U.S. could make him a target.
+                                He began receiving threats from the Taliban. After two years, he stopped his job as an interpreter.
+                                When Afzal decided that Afghanistan was no longer safe for him, he began looking for a way
+                                to leave.</p>
+
+                            <p>Afzal applied for a Special Immigrant Visa to come to the U.S. in the beginning of 2016 -- today,
+                                his application is still pending. Eight months ago, he left in hopes of reaching Europe and
+                                applying for asylum there. After months of being shuffled from one camp to another, in Bulgaria,
+                                then Serbia, and then Hungary, Afzal finally arrived in Paris five days ago. But he is learning
+                                that the digital footprint he has left with immigration authorities throughout his long journey
+                                may have ramifications. </p>
+
+                            <p>“The biggest thing for when people are tracked is of course, fingerprints,” explained Katie Kuschminder,
+                                a postdoctoral researcher on migration studies at Maastricht University in the Netherlands.
+                                “In the EU you’re supposed to be fingerprinted on arrival, and once your fingerprints are
+                                in the Eurodac system, then it should be that any European Union country can access it.”</p>
+
+                            <p>This means that when Afzal first arrived in Bulgaria, his fingerprints were collected and registered
+                                in the Eurodac system. Now, no matter where Afzal tries to claim asylum in Europe, those
+                                fingerprints will show where he first arrived. And under the EU’s Dublin Regulation, which
+                                was adopted in 2003, Afzal can be sent back to Bulgaria by any of the countries where he
+                                seeks asylum. </p>
+
+                            <p>“Yesterday, I was fingerprinted in France, and they saw that I was already in Bulgaria,” said
+                                Afzal. “Now, they may send me back to Bulgaria. I don’t want to go back, because I had a
+                                very bad time in Bulgaria.”</p>
+
+                            <p>The advancement of biometric technology -- or technology that tracks individuals by physiological
+                                characteristics such as facial recognition, fingerprints and iris features -- has made it
+                                easier than ever to register and track refugees quickly and effectively. UNHCR officially
+                                began using biometrics to register refugees in 2010. In Europe, biometric identifiers are
+                                widely used in travel documents, visas, residence permits, passports, and of course, in immigration
+                                processing centers.</p>
+
+                                                        <!-- This contains the data privacy visualization -->
+                            <figure class="figure center-block">
+                                <!--figure-img just adds some default Bootstrap sytling and padding
+                                img-fluid should make the figure resize with the container 
+                                float-right will place my figure inline, on the right-->
+                                <img src='PrivacyPerson.jpg' class="figure-img img-responsive float-right rounded viz" alt="Privacy protections for European Citizens versus Refugees">
+                                <figcaption class="figure-caption"> While the European Union has implemented strict rules safeguarding the privacy of its citizens,
+                                    refugees have far fewer prviacy rights and protections.
+                                </figcaption>
+                            </figure>
+
+                            <p>While there are many advantages for aid agencies and governments that use biometric data, there
+                                are also downfalls, mostly tied to the ethical questions raised by this method of data collection.
+                                In a paper for the journal Science and Engineering Ethics, lawyer Jeremy Wickens wrote about
+                                the potential of biometrics to cause “social exclusion,” pitting the public interest against
+                                the rights of an individual. Individuals of certain races, religions and backgrounds can
+                                be disadvantaged by the biometric information collected on them.</p>
+
+                            <p>In the case of refugees, biometric registration creates a permanent, digital footprint of these
+                                individuals that will follow them for the rest of their lives. In Europe, few countries are
+                                equipped to handle the high numbers of refugees seeking asylum. Even in Germany, where Chancellor
+                                Angela Merkel has made a significant commitment to welcoming refugees, more than half of
+                                the 97,275 asylum applications the country received in 2014 were denied. A digital footprint
+                                limits asylum seekers’ mobility throughout Europe. Katie Kuschminder said that oftentimes,
+                                migrants seeking asylum in Europe don’t realize how biometric registration can be used to
+                                their detriment until long after they’ve arrived.</p>
+
+                            <p>“It’s such an overload when [migrants] arrive, and you really have to envision that many people
+                                have been through a terrible situation in their country of origin, they’ve survived, then
+                                they’ve been on a boat without food or water, then they’ve been rescued. So when they get
+                                to processing, they’re often not at all able to fully understand what’s happening,” said
+                                Kuschminder. “I just think they’re in states of shock, and they’re grateful. But over time
+                                there’s a lot of frustration.”</p>
+
+                            <p>Kuschminder saw this frustration firsthand when studying Eritrean and Nigerian migrants in Italy
+                                in 2014. Through extensive networks of fellow asylum-seekers, Eritreans in particular had
+                                learned that giving their fingerprints to the EU would limit their options on where they
+                                could seek asylum. Kuschminder said that these migrants would refuse to be fingerprinted
+                                upon arrival in Italy, and choose to seek asylum in another country, where their biometric
+                                footprint could not be tracked.</p>
+
+                            <p>In Kuschminder’s study of the European migrant crisis in Italy, she observed that oftentimes,
+                                immigration officials did not feel comfortable forcing refugees to get their fingerprint
+                                taken at the border. This reluctance might be attributed to Europeans’ strong sense of a
+                                right to personal privacy, a value that developed in response to the hierarchical societies
+                                of the 17th and 18th centuries. In a 2004 article in The Yale Law Journal about the “two
+                                Western cultures” of privacy -- that is, Europe and the United States -- professor James
+                                Q. Whitman argues that what one sees in European continental law today “is the result of
+                                a centuries-long, slow-maturing revolt against that style of status privilege.” Because much
+                                of modern European society was shaped by efforts to dismantle the strict class structure
+                                that existed a few centuries ago, most EU citizens today believe that all citizens -- from
+                                no matter what social background they come from -- enjoy the same right to privacy. </p>
+
+                            <p>Italy was criticized for allowing migrants to evade fingerprinting, and the EU eventually cracked
+                                down on the registration system, establishing hot spots controlled by agents from Frontex,
+                                the European border control office. Migrants cannot leave these hot spots until they are
+                                fingerprinted. Kuschminder even said she’s heard of migrants being denied food until they
+                                give EU border agents this information.</p>
+
+                            <p>Patrick Vinck, who is the research director of the Harvard Humanitarian Institute, works with
+                                aid agencies around the world to use big data in their research. He said that while privacy
+                                is a basic human right that all people, including refugees, should enjoy, refuugees often
+                                find themselves in a tough situation when seeking aid.</p>
+
+                            <p>“The challenge is that for refugees to be able to access a number of services, they need to provide
+                                information that would not necessarily be asked from any other citizen,” said Vinck. “In
+                                order to get your voucher or cash credit, you need to let agencies have your iris scanned
+                                or your fingerprint. When you’re a refugee you can’t say no, because saying no means you
+                                can’t get the service.”</p>
+
+                            <p>Privacy is not only a tenant of basic human rights, but also of European values. With policies
+                                such as the “right to be forgotten” -- which allows citizens to request that negative information
+                                about them be removed from the Internet -- Europe has distinguished itself as a stronghold
+                                of personal privacy in the digital age, particularly in comparison with the U.S., where citizens’
+                                expectations of personal privacy are lower. For asylum seekers in the EU, however, standards
+                                are different. The hundreds of thousands of immigrants seeking refuge in Europe now know
+                                that the road to asylum is long, and their information will be tracked every step of the
+                                way.
+                            </p>
+
+                            <p>Mati Afzal knows he has given up his privacy as an asylum seeker in Europe. But he insists that
+                                it’s a small price to pay, and that he has nothing to be afraid of. “I’m just in search of
+                                a peaceful life,” he said. “Maybe if I was a criminal, giving up privacy would be an issue.”</p>
+
+
+                        </article>
+                    </section>
+                </div>
+
+                <div class='col-med-4'>
+                    <div class='container' id='aboutSidebar'>
+                        <div>
+                            <h1 class='h4'> About Note to Self </h1>
+                        </div>
+                        <p class="sidebarText">
+                            The tech show about being human. Hosted by <a href="https://www.wnyc.org/people/manoush-zomorodi/">Manoush Zomorodi.</a><br>Produced
+                            by <a href="https://www.wnyc.org/">WNYC</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar div NEEDS TO BE FIXED AT 300PX-->
+
+
+        <!-- This is a fixed width column with info about the show.
+                    It's populated on the homepage, but mostly blank here -->
+
+
+    </div>
+    <!-- /container -->
+
+
+
+</body>
+
+</html>

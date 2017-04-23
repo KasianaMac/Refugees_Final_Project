@@ -1,0 +1,182 @@
+/* Here is my style guide */
+
+/* move the main text out of the way of the navbar */
+body { padding-top: 70px; }
+
+/* article formats */
+.storyHeaderImage {
+    background-image: url('Fingerprinting.jpg');
+    /*
+    By Staff Sgt. Raul Gonzalez - <a rel="nofollow" class="external free" href="https://www.dvidshub.net/image/678237">https://www.dvidshub.net/image/678237</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=39659070">Link</a>
+    */
+    background-position: center center;
+    background-zie: cover;
+}
+
+.content {
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.aboutSidebar {
+    width: 300px;
+}
+
+.viz {
+    width: 500px;
+}
+
+.navbar {
+    background: #8d2131;
+    color: #ffffff; 
+}
+
+/* apply to About section on article page */
+.topBar {
+    padding-top: 20px;
+    background: #DE1E3D;
+    display: block;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+
+.sidebarHeading {
+    color: #888888;
+    border-bottom: 1px solid #dddddd;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.sidebarText {
+    font-size: .875rem;
+    line-height: 1.5rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+//Phones (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .sidebarCol{
+        width: 0px;
+        visibility: hidden;
+    }
+    .sidebarText {
+        width: 0%;
+    }
+}
+
+// Bigger than phones (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+
+
+
+
+
+
+/*
+
+.articleTitlekjm {
+	font-weight: bold;
+	font-size: 24px;
+	font-family: Calibri, Helvetica, sans-serif;
+	color: #262626;
+}
+.subHeadkjm {
+	font-style: italic;
+	font-size: 16px;
+	font-family: Calibri, Helvetica, sans-serif;
+	color: #262626;
+}
+.bylinekjm {
+	font-size: 12px;
+	font-family: Calibri, Helvetica, sans-serif;
+	color: #262626;
+}
+.dateHeadkjm {
+	font-variant: small-caps;
+	font-size: 12px;
+	font-family: Calibri, Helvetica, sans-serif;
+	color: #262626;
+}
+.bodykjm {
+	line-height: 20px font-size : 12px;
+	font-family: Calibri, Helvetica, sans-serif;
+}
+
+#day_pie_container{
+	width:500px;
+	height: 400px;
+}
+
+#refugee_bar_container{
+	width:800px;
+	height:500px;
+}
+
+#kids_line_container{
+	width:400px;
+	height:500px;
+}
+
+img {
+	size: 100%;
+	max-height: 300px;
+	max-width: 100%;
+}
+
+/* This section of the style sheet is styling from WNYC
+It mostly focuses on the sidebar...make sure to review this and
+the above styles, which were from my homework webpage */
+
+/*
+body {
+    font-family:'Open Sans', sans-serif;
+    font-weight:600;
+    font-size:16px;
+    letter-spacing:0;
+    line-height:1.5em;
+}
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #DE1E3D;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f8d3d9;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
