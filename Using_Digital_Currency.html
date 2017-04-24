@@ -1,0 +1,240 @@
+<!-- WNYC style guide at https://wnyc.github.io/#vision -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags for Bootstrap -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--The title of my page -->
+    <title>Note to Self | WNYC</title>
+
+    <!--The description of my page -->
+    <meta name='description' content="Is your phone watching you? Can wexting make you smarter? Are your kids real? These and other essential quandaries facing anyone trying to preserve their humanity in the digital age. Join host Manoush Zomorodi for your weekly reminder to question everything.
+
+        Subscribe to the podcast on iTunes
+        Follow @notetoself on Twitter
+        Got an idea or a pitch? Send it to notetoself@wnyc.org. We love to hear from you.
+
+        Note to Self's logo and all Infomagical illustrations are by artist John Hersey." <meta name="author" content="Alena Maschke, Kasiana McLenaghan and Courtney Vinopal | Columbia University">
+
+    <!-- ADD AN ICON FILE.  
+    <link rel='icon' href='...'>
+    -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!--WNYC-specific stylesheet (STILL NEED TO FILL IN)-->
+    <link rel="stylesheet" href="WNYCstyles.css" />
+
+    <!--Load the AJAX API. This will load up the Google charts scripts that power my visualizations
+        
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="chart_scripts.js"></script>
+    NOTE THAT THIS CODE MAY NOT BE NECESSARY....REVIEW BEFORE POSTING-->
+</head>
+
+<body>
+
+    <!--A note about page layout: WNYC has four views, depending on how large a browser window is.
+            View 1: 1025px and wider. (large)
+            View 2: 800-1024px (medium)
+            View 3: 475-799px (small)
+            View 4: <475px (xs)
+        See https://docs.google.com/a/columbia.edu/document/d/1w-zSNz-ddZbEB8uUftwyjr_lgSdtpljvQKYUYnoP9CY/edit?usp=sharing to see examples of each view.
+        For simplicity's sake, this effort will begin with views 2 and 4, which provide basic mobile and 
+        web views, and expand to additional views as time allows.
+    -->
+
+    <!-- First container - the bright red WNYC bar 
+    (OR IT WILL BE WHEN I FIGURE OUT HOW TO GET IT ABOVE THE NAVBAR ;)
+    <div class='row'>
+        <div class='col'>
+            test
+        </div>
+    </div>
+    -->
+
+    <!-- Second 'container' - the dark red fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.wnyc.org/">Listen Live</a></li>
+                    <li><a href="http://www.wnyc.org/streams">All Streams</a></li>
+                    <li><a href="http://www.wnyc.org/schedule">Schedule</a></li>
+                    <li class="active"><a href="#">Shows</a></li>
+                    <li><a href="http://www.wnyc.org/topics">Topics</a></li>
+                    <li><a href="http://www.wnyc.org/discover/start">Discover</a></li>
+                    <li><a href="http://www.wnyc.org/search">Search</a></li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- Note to Self article page -->
+    <!--This is the bootstrap div.  It needs to contain EVERYTHING in the body -->
+    <div class='container-fluid'>
+
+
+        <!-- Third containter - article + sidebar-->
+        <!-- This row is split 2/3 to the left, containing the article and 1/3 on the right, which is a fixed width sidebar 
+        <div class='row'> -->
+        <!-- Article div -->
+        <!-- <div class='col-lg-8'> -->
+        <!-- a lead article is made up of a title, image, dateline, text,
+                    and author. The rest of the elements are the same on for each article. -->
+
+        <!-- to try and keep this simple, I'm dividing the containers
+                    for my lead article image, which will be the automatically resizing
+                    box with complicated images and buttons, and a separate container
+                    for the body of the article itself-->
+        <!--       <section class='container-fluid'>
+                </section>
+            </div>
+        </div>  -->
+
+
+        <!-- This is the article body container -->
+        <div class='container-fluid'>
+            <div class='row'>
+                <!-- size tells it when to stack 
+                    if the viewport (aka browser window) is less than the 
+                    specified size then the element just takes up the whole screen-->
+                <div class='col-md-8'>
+                    <section class="content" id="article">
+                        <article>
+                            <header class='storyHeaderImage'>
+                                <img alt="Note to Self" class="badge" src="https://media2.wnyc.org/i/50/50/l/99/1/NoteToSelf_1400X1400_TIt7xNg.png" width="50"
+                                    height="50">
+                                <h1 class='h1'>Using Digital Currency, Aid Agencies Bridge the Gap Between Refugees and Locals</h1>
+                            </header>
+                            <p> The Greek island of Lesbos is located just a few miles off the Turkish coast. A European holiday
+                                destination for decades, Lesbos has now earned a new reputation as the first frontier of
+                                a humanitarian crisis crashing ashore at Europe’s Mediterranean coastline. In 2016, 355,361
+                                people crossed different parts of the Mediterranean, seeking refuge in various countries
+                                across Europe. Many of them arrived on Lesbos. Once the refugees make it of make-shift boats
+                                and dinghies, they are in need of food, water and other assistance. Many are relieved to
+                                have made it onto solid ground, but are initially confused. In an interview describing the
+                                situation on the ground in 2015, Javier Alvarez, Senior Leader of the Strategic Response
+                                and Global Emergencies Team at MercyCorps, described the arrival’s initial needs: “Immediately
+                                they need water, food, and some kind of health check. When they first arrive, the first question
+                                many refugees ask is “Where am I?”, he said. </p>
+
+                            <p> Once the refugees’ most immediate needs are taken care of, they are in need of a sustainable
+                                support structure: food, clothing, hygiene products. Beyond these basic needs, the diverse
+                                backgrounds of people arriving in Greece called for a more flexible solution than the usual
+                                approach of setting up tents, and handing out food rations and blankets. “To meet their needs,
+                                we thought it would be best to let them decide what they need,” says Katia Riddle, Communications
+                                Officer at MercyCorps. Instead of assigning people some of the products they needed, MercyCorps
+                                decided to hand out cash assistance. The money was distributed electronically, and could
+                                be accessed and transferred via mobile phones.</p>
+
+                            <p> Despite the focus on Syrian refugees, those who arrive at European shorelines actually hail from
+                                a variety of locations, ranging from Afghanistan in Central Asia to West Africa’s Cote d’Ivoire.
+                                This diverse group of people challenged traditional strategies of aid distribution. “Twenty
+                                years ago there was a general feeling that it was better to give people commodities, like
+                                blankets,” says Riddle. With its fairly developed infrastructure, Greece offered an ideal
+                                environment to experiment, and offer refugees more agency. “It’s more humane and more respectful,”
+                                Riddle says. With the e-money, refugees were able to purchase whatever they felt they needed
+                                the most, as long as it was available at the local stores. But it’s not only refugees who
+                                benefit. Rather than shipping in products from abroad, local vendors were able to generate
+                                some revenue from the newly arrived population. “It was kind of balm, to the community that
+                                was bearing a lot of the burden already,” says Riddle. </p>
+
+                            <p> According to Master Card’s Center for Inclusive Growth, “mobile money and digital currency could
+                                transform financial inclusion for refugees.” However, mobile money is not a cure-all. In
+                                areas with with limited financial access and high levels of corruption, mobile money and
+                                digital currencies are either impossible to implement, or simply miss the root of the problem.
+                                “E-Money is better because it’s more exact and takes out the middleman,” says Riddle, meaning
+                                that digital currency limits the element of human failure or interference and makes transactions
+                                easier to track. In Nigeria, for example, MercyCorps decided to use e-vouchers instead. Their
+                                digital nature helps with accountability, but the personal liberty given to refugees in Greece
+                                is lost in the process.</p>
+
+                            <p> Of course, Master Card, Visa, and other credit card providers have a vested interest in the success
+                                of digital currency and e-money. Almost all reports on aid distributed through digital channels,
+                                e-money in particular are sponsored by either of the major credit card companies. Introducing
+                                refugees to mobile currency means introducing them to a brand, as well as the concept of
+                                banking overall. “They have the same incentive in including them, as they have in including
+                                me and you: they make some money,” says Riddle. </p>
+
+                            <p> Critical voices mostly come from the ranks of local politicians. “We are always getting: How
+                                do you know people are not spending it on cigarettes? What about terrorism?” says Riddle.
+                                Allowing refugees to decide for themselves is still a radical concept that raises many concerns.
+                                Local vendors, however, appreciate the mutual benefit of trading with refugees. “It’s not
+                                the beneficiaries who are objecting to the system, it’s the people who aren’t on the ground
+                                seeing it at work,” says Riddle. For the aid agencies themselves, the traceability of digital
+                                transactions helps identify needs and refugee flows. </p>
+
+
+
+
+                            <!-- This contains the data privacy visualization -->
+                            <figure class="figure center-block">
+                                <!--figure-img just adds some default Bootstrap sytling and padding
+                                img-fluid should make the figure resize with the container 
+                                float-right will place my figure inline, on the right-->
+                                <img src='python-gridded, DRAFT.pdf' class="figure-img img-responsive float-right rounded viz" alt="TK">
+                                <figcaption class="figure-caption"> TK
+                                </figcaption>
+                            </figure>
+
+
+                        </article>
+                    </section>
+                </div>
+
+                <div class='col-med-4'>
+                    <div class='container' id='aboutSidebar'>
+                        <div>
+                            <h1 class='h4'> About Note to Self </h1>
+                        </div>
+                        <p class="sidebarText">
+                            The tech show about being human. Hosted by <a href="https://www.wnyc.org/people/manoush-zomorodi/">Manoush Zomorodi.</a><br>Produced
+                            by <a href="https://www.wnyc.org/">WNYC</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar div NEEDS TO BE FIXED AT 300PX-->
+
+
+        <!-- This is a fixed width column with info about the show.
+                    It's populated on the homepage, but mostly blank here -->
+
+
+    </div>
+    <!-- /container -->
+
+
+
+</body>
+
+</html>
