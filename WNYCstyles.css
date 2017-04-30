@@ -2,7 +2,12 @@
 
 
 /* move the main text out of the way of the navbar */
-body { padding-top: 70px; }
+body { padding-top: 0px; }
+
+.wnycmast{
+    background: #DE1E3D;
+    height: 75px;
+}
 
 .my_navbar {
     background: #8d2131;
@@ -35,13 +40,11 @@ body { padding-top: 70px; }
 .navbar-default .btn-link:focus {
   color: #f8d2d8;
 
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #f8d2d8;
     background-color: transparent;
   }
-
-
 
 
 .content {
@@ -55,8 +58,6 @@ body { padding-top: 70px; }
     margin-bottom: 1.5rem;
 }
 
-
-
 /* article formats */
 .storyHeaderImage {
     background-image: url('Fingerprinting.jpg');
@@ -66,10 +67,6 @@ body { padding-top: 70px; }
     background-position: center center;
     background-zie: cover;
 }
-
-
-
-
 
 .aboutSidebar {
     width: 300px;
