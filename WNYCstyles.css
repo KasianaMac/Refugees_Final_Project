@@ -9,6 +9,13 @@ body { padding-top: 0px; }
     height: 75px;
 }
 
+.donate_button {
+    border-color: rgba(255,255,255,.5);
+    background-color: #DE1E3D;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
 .my_navbar {
     background: #8d2131;
     color: #ffffff;
