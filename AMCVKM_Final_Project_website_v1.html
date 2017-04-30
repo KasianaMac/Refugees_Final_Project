@@ -20,25 +20,24 @@
 
         Note to Self's logo and all Infomagical illustrations are by artist John Hersey." <meta name="author" content="Alena Maschke, Kasiana McLenaghan and Courtney Vinopal | Columbia University">
 
-    <!-- ADD AN ICON FILE. --> 
-    <link rel="icon" href="favicon.ico" >
-   
+    <!-- Icon file (shows up in the tab bar) -->
+    <link rel="icon" href="favicon.ico">
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
-    <!-- Optional theme -->
+    <!-- Optional Bootstrap theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <!--WNYC-specific stylesheet (STILL NEED TO FILL IN)-->
+    <!--WNYC-specific stylesheet -->
     <link rel="stylesheet" href="WNYCstyles.css" />
 
     <!--Load the AJAX API. This will load up the Google charts scripts that power my visualizations
@@ -50,18 +49,19 @@
 </head>
 
 <header class="wnycmast masthead">
-  <div class="container">
-  <div class="row">
-      <img class="left_logo" src="wnyc_logo.png" href="https://www.wync.org" style="width:100px; padding-top:20px;">
+    <div class="container-fluid">
+        <div class="row">
+            <img class="left_logo" src="wnyc_logo.png" href="https://www.wync.org" style="width:100px; padding-top:20px; padding-left:20px">
+            <img class="right"
+        </div>
     </div>
-  </div>
-  </div>
-</header>	
+    </div>
+</header>
 
 
-<body>
 
-    <!--A note about page layout: WNYC has four views, depending on how large a browser window is.
+
+<!--A note about page layout: WNYC has four views, depending on how large a browser window is.
             View 1: 1025px and wider. (large)
             View 2: 800-1024px (medium)
             View 3: 475-799px (small)
@@ -71,7 +71,7 @@
         web views, and expand to additional views as time allows.
     -->
 
-    <!-- First container - the bright red WNYC bar 
+<!-- First container - the bright red WNYC bar 
     (OR IT WILL BE WHEN I FIGURE OUT HOW TO GET IT ABOVE THE NAVBAR ;)
     <div class='row'>
         <div class='col'>
@@ -80,42 +80,43 @@
     </div>
     -->
 
-    <!-- Second 'container' - the dark red fixed navbar  -->
+<!-- Second 'container' - the dark red fixed navbar  -->
 
-  	
 
-    <nav class="navbar navbar-default navbar-fixed-top my_navbar">
-        <div class="container">
-            <div style="height:40px; background-color:#ff0000;position:absolute;top:0px;"></div>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
+
+<nav class="navbar navbar-default navbar-fixed-top my_navbar">
+    <div class="container-fluid">
+        <div style="height:40px; background-color:#ff0000;position:absolute;top:0px;"></div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://www.wnyc.org"> 
-            <img width="50 px" src="wnyc_logo.png">
-          </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li style="font-weight:200;" ><a href="http://www.wnyc.org/">Listen Live</a></li>
-                    <li><a href="http://www.wnyc.org/streams">All Streams</a></li>
-                    <li><a href="http://www.wnyc.org/schedule">Schedule</a></li>
-                    <li><a href="#">Shows</a></li>
-                    <li><a href="http://www.wnyc.org/topics">Topics</a></li>
-                    <li><a href="http://www.wnyc.org/discover/start">Discover</a></li>
-                    <li><a href="http://www.wnyc.org/search">Search</a></li>
-                </ul>
-                </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
+            <a class="navbar-brand" href="https://www.wnyc.org">
+                <img width="50 px" src="wnyc_logo.png">
+            </a>
         </div>
-    </nav>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li style="font-weight:200;"><a href="http://www.wnyc.org/">Listen Live</a></li>
+                <li><a href="http://www.wnyc.org/streams">All Streams</a></li>
+                <li><a href="http://www.wnyc.org/schedule">Schedule</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="http://www.wnyc.org/topics">Topics</a></li>
+                <li><a href="http://www.wnyc.org/discover/start">Discover</a></li>
+                <li><a href="http://www.wnyc.org/search">Search</a></li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
 
+<body>
     <!-- Note to Self article page -->
     <!--This is the bootstrap div.  It needs to contain EVERYTHING in the body -->
     <div class='container-fluid'>
@@ -202,8 +203,36 @@
                                 widely used in travel documents, visas, residence permits, passports, and of course, in immigration
                                 processing centers.</p>
 
-                                                        <!-- This contains the data privacy visualization -->
-                            <figure class="figure center-block">
+                            <!-- This contains the data privacy visualization.  It switches to a table when the window is smaller.  -->
+                            <table class="table table-condensed hidden-md hidden-lg hidden-xl">
+                                <thead>
+                                    <tr>
+                                        <th><h4>Rights of EU citizens</h4></th>
+                                        <th><h4>Requirements of refugees entering EU</h4></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>A fundamental right:</strong>   The European Convention guarantees each citizen "respect for his private and family life, his home and his correspondence."</td>
+                                        <td><strong>Iris scans:</strong> Used by UNHCR to distribute cash assistance, and track refugees as they move from camp to camp </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Right to protect personal data: </strong> Citizens must consent to have their data collected, and the collector must have a legal basis for the request.</td>
+                                        <td><strong>Facial recognition:</strong> EU border agents take all refugees' photos, including children's. These can then be analyzed with facial recognition software.  </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Freedom of movement: </strong> Citizens are free to travel throughout the Schengen area of the EU without presenting an ID or passport.</td>
+                                        <td><strong>Fingerprints:</strong> Eurodac collects refugees' fingerprints to link them to their first country of arrival.  </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>"Right to be Forgotten:" </strong> Under EU law, individuals have the right to ask search engines to remove links with personal information about them.</td>
+                                        <td><strong>Social media monitoring:</strong> Governments are increasingly reviewing refugees' social media accounts before allowing entry.  </td>                                    </tr>
+                                </tbody>
+                            </table>
+                            
+
+
+                            <figure class="figure center-block hidden-sm hidden-xs">
                                 <!--figure-img just adds some default Bootstrap sytling and padding
                                 img-fluid should make the figure resize with the container 
                                 float-right will place my figure inline, on the right-->
