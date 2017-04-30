@@ -36,6 +36,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
     <!--WNYC-specific stylesheet (STILL NEED TO FILL IN)-->
     <link rel="stylesheet" href="WNYCstyles.css" />
 
@@ -68,9 +70,13 @@
     </div>
     -->
 
-    <!-- Second 'container' - the dark red fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Second 'container' - the dark red fixed navbar  -->
+
+  	
+
+    <nav class="navbar navbar-default navbar-fixed-top my_navbar">
         <div class="container">
+            <div style="height:40px; background-color:#ff0000;position:absolute;top:0px;"></div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
                     aria-controls="navbar">
@@ -82,10 +88,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="http://www.wnyc.org/">Listen Live</a></li>
+                    <li style="font-weight:200;" ><a href="http://www.wnyc.org/">Listen Live</a></li>
                     <li><a href="http://www.wnyc.org/streams">All Streams</a></li>
                     <li><a href="http://www.wnyc.org/schedule">Schedule</a></li>
-                    <li class="active"><a href="#">Shows</a></li>
+                    <li><a href="#">Shows</a></li>
                     <li><a href="http://www.wnyc.org/topics">Topics</a></li>
                     <li><a href="http://www.wnyc.org/discover/start">Discover</a></li>
                     <li><a href="http://www.wnyc.org/search">Search</a></li>
@@ -126,7 +132,7 @@
                 <!-- size tells it when to stack 
                     if the viewport (aka browser window) is less than the 
                     specified size then the element just takes up the whole screen-->
-                <div class='col-md-8'>
+                <div class='col-sm-8'>
                     <section class="content" id="article">
                         <article>
                             <header class='storyHeaderImage'>
@@ -134,6 +140,10 @@
                                     height="50">
                                 <h1 class='h1'>Courtney's Article Title</h1>
                             </header>
+                            <!-- Look under the responsive utilities in Bootstrap
+                            hidden-sm and hidden-xs will make these things go away entirely when
+                             -->
+
                             <p class='lead'>Biometric data has made it easier than ever to register and track refugees. But what are the
                                 downsides to a permanent digital footprint?</p>
 
@@ -268,7 +278,7 @@
                     </section>
                 </div>
 
-                <div class='col-med-4'>
+                <div class='col-sm-4'>
                     <div class='container' id='aboutSidebar'>
                         <div>
                             <h1 class='h4'> About Note to Self </h1>
