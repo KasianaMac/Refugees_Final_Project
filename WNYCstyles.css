@@ -72,6 +72,36 @@ body {
     background-color: transparent;
   }
 
+/******
+   ATTEMPT TO GET MY MASTHEAD TO APPEAR ABOVE THE NAVBAR
+*******/
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+	height:280px;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+#sidebar.affix-top {
+    position: static;
+}
+
+#sidebar.affix {
+    position: fixed;
+    top: 80px;
+}
+        </style>
+    </head>
+
 
 /**********************
    FUN WITH BUTTONS
@@ -142,16 +172,6 @@ body {
     letter-spacing: 1px;
 }
 
-.wnyc_listen_btn{
-    background: #128cf4;
-    padding: 12px 22px;
-    border: none;
-    color: #ffffff;
-    border-radius: 26px;
-    font-size: 16px;
-    line-height: 1;
-}
-
 .wnyc_header_btn{
     background: none;
     padding: 12px 22px;
@@ -162,6 +182,20 @@ body {
     line-height: .8;
 }
 
+.wnyc_header_btn:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.wnyc_listen_btn{
+    background: #128cf4;
+    padding: 12px 22px;
+    border: none;
+    color: #ffffff;
+    border-radius: 26px;
+    font-size: 16px;
+    line-height: 1;
+}
 
 /***********************
   IMAGE HEADER
@@ -178,7 +212,11 @@ body {
     By Staff Sgt. Raul Gonzalez - <a rel="nofollow" class="external free" href="https://www.dvidshub.net/image/678237">https://www.dvidshub.net/image/678237</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=39659070">Link</a>
     */
     background-position: center center;
-    background-zie: cover;
+    background-size: cover;
+}
+
+.bottom_buffer{
+    margin-bottom: 20px;
 }
 
 /* ARTICLE AND BODY 
@@ -198,6 +236,15 @@ p {
 /* Styling the column that runs along the right rail in larger viewports*/
 .aboutSidebar {
     width: 300px;
+    font-size: 14px;
+}
+
+.sidebar_header {
+    color:#686868;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 32px;
 }
 
 /* Styling the Refugee Rights visualization */
