@@ -12,6 +12,12 @@ body {
     font-weight: 500;
 }
 
+/* Drop the padding for a column.  Helping to line up the images in the header */
+.no_padding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 /* MASTHEAD AND NAVIGATION*/
 
 /* Match masthead styling to WNYC*/
@@ -66,12 +72,101 @@ body {
     background-color: transparent;
   }
 
-/* ARTICLE AND BODY 
-   Matching WNYC's basic body stylings */
+
+/**********************
+   FUN WITH BUTTONS
+**********************/
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #ffffff;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+/***********************
+  CUSTOM BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.wnyc_listen_btn{
+    background: #128cf4;
+    padding: 12px 22px;
+    border: none;
+    color: #ffffff;
+    border-radius: 26px;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.wnyc_header_btn{
+    background: none;
+    padding: 12px 22px;
+    border: 2px solid #686868;
+    color: #ffffff;
+    border-radius: 26px;
+    font-size: 12px;
+    line-height: .8;
+}
 
 
+/***********************
+  IMAGE HEADER
+************************/
 
-/* creating the header image and background */
 .med_image_header{
     background-image: url("Fingerprinting_upsidedown_blurred.png");
     padding-left: 40px;
@@ -86,9 +181,8 @@ body {
     background-zie: cover;
 }
 
-Listen_button{
-    background-color: rgb(18, 140, 244)
-}
+/* ARTICLE AND BODY 
+   Matching WNYC's basic body stylings */
 
 p {
     font-size: 16px;
