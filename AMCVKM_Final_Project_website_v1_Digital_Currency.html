@@ -23,6 +23,9 @@
     <!-- Icon file (shows up in the tab bar) -->
     <link rel="icon" href="favicon.ico">
 
+    <!-- Jquery -->
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -39,6 +42,8 @@
 
     <!-- Font Awesome CDN embed (for adding nifty icons) -->
     <script src="https://use.fontawesome.com/a864de255a.js"></script>
+
+
 
     <!--WNYC-specific stylesheet -->
     <link rel="stylesheet" href="WNYCstyles.css" />
@@ -65,44 +70,32 @@
     </header>
 
 
-
-
-
-
-
-
     <!-- NAVBAR -->
-    <nav class="navbar navbar-default navbar-fixed-top my_navbar">
-        <div class="container-fluid">
-            <div style="height:40px; background-color:#ff0000;position:absolute;top:0px;"></div>
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand hidden-sm hidden-md hidden-lg hidden-xl" href="https://www.wnyc.org">
-                    <img width="50 px" src="wnyc_logo.png">
-                </a>
+    <div id="nav">
+        <div class="navbar navbar-default navbar-static my_navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand hidden-sm hidden-md hidden-lg hidden-xl" href="https://www.wnyc.org">
+                        <img class="center-block" width="50 px" src="wnyc_logo.png">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li style="font-weight:200;"><a href="http://www.wnyc.org/">Listen Live</a></li>
+                        <li><a href="http://www.wnyc.org/streams">All Streams</a></li>
+                        <li><a href="http://www.wnyc.org/schedule">Schedule</a></li>
+                        <li><a href="#">Shows</a></li>
+                        <li><a href="http://www.wnyc.org/topics">Topics</a></li>
+                        <li><a href="http://www.wnyc.org/discover/start">Discover</a></li>
+                        <li><a href="http://www.wnyc.org/search">Search</a></li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li style="font-weight:200;"><a href="http://www.wnyc.org/">Listen Live</a></li>
-                    <li><a href="http://www.wnyc.org/streams">All Streams</a></li>
-                    <li><a href="http://www.wnyc.org/schedule">Schedule</a></li>
-                    <li><a href="#">Shows</a></li>
-                    <li><a href="http://www.wnyc.org/topics">Topics</a></li>
-                    <li><a href="http://www.wnyc.org/discover/start">Discover</a></li>
-                    <li><a href="http://www.wnyc.org/search">Search</a></li>
-                </ul>
-                </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
         </div>
-    </nav>
+    </div>
 
 
     <!--A note about page layout: WNYC has four views, depending on how large a browser window is.
@@ -145,10 +138,6 @@
                     for my lead article image, which will be the automatically resizing
                     box with complicated images and buttons, and a separate container
                     for the body of the article itself-->
-    <!--       <section class='container-fluid'>
-                </section>
-            </div>
-        </div>  -->
 
 
     <!-- This is the article body container -->
@@ -163,41 +152,41 @@
                     <div class="med_image_header">
                         <!-- NtS logo and publishing credit -->
                         <div class='row'>
-
-                            <img style="height:50px;" src="NoteToSelf_1400X1400.png">
-                            <div style="color:grey; font-size:10px">Published by
+                            <img class="img-rounded" style="height:50px; margin-top:20px" src="NoteToSelf_1400X1400.png">
+                            <div style="color:grey; font-size:12px">Published by
                             </div>
-                            <div style="color:#ffffff; font-size:12px">Note to Self
+                            <div class="publishing_bug">Note to Self
                             </div>
                         </div>
                         <!-- ****** HEADLINE ******* -->
                         <div class='row'>
-                            <h1 style='color:#ffffff'><strong>Using Digital Currency, Aid Agencies Bridge the Gap Between Refugees and Locals</strong></h1>
+                            <h1 class="headline">Using Digital Currency, Aid Agencies Learn About Refugee Needs</h1>
                         </div>
                         <!-- Listen, Queue and social media buttons -->
                         <div class='row'>
                             <!-- Listen and Queue -->
-                            <div class='col-sm-6 no_padding pull-left'>
-                                <!-- <img class="pull-left" style="max-width:150px;" src="ListenButton.png"> -->
-                                <button type="button" class="btn btn-md wnyc_header_btn round" id="wnyc_listen_btn">
-                                    <span class="glyphicon glyphicon-play"></span>
-                                    Listen <small style='color:#686868'> 15 min </small>
+                            <div class='col-sm-7 no_padding'>
+                                <!-- Listen -->
+                                <button type="button" class="btn btn-md wnyc_listen_btn round">
+                                    <span class="glyphicon glyphicon-play"></span> <strong>
+                                    Listen </strong> <small style='color:#b7dcfc'> 15 min </small>
                                     </button>
+                                <!-- Queue -->
                                 <button type="button" class="btn btn-md wnyc_header_btn round">+ Queue</button>
                                 <button type="button" class="btn btn-md wnyc_header_btn round">...</button>
                             </div>
                             <!-- SOCIAL MEDIA ICONS -->
-                            <div class='col-sm-6'>
+                            <div class='col-sm-5 no_padding'>
                                 <!-- Facebook icon -->
-                                <button type="button" class="btn btn-md wnyc_header_btn pull-right">
+                                <button type="button" class="btn btn-md wnyc_header_btn wnyc_social_btn">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </button>
                                 <!-- Twitter icon -->
-                                <button type="button" class="btn btn-md wnyc_header_btn pull-right">
+                                <button type="button" class="btn btn-md wnyc_header_btn wnyc_social_btn">
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
                                 </button>
                                 <!-- email icon -->
-                                <button type="button" class="btn btn-md wnyc_header_btn pull-right">
+                                <button type="button" class="btn btn-md wnyc_header_btn wnyc_social_btn center-text">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -210,6 +199,11 @@
                     <!-- Look under the responsive utilities in Bootstrap
                             hidden-sm and hidden-xs will make these things go away entirely when
                              -->
+
+                    <div class="row">
+                        <span> May 8, 2017 </span>
+                    </div>
+
                     <article>
                         <p>The Greek island of Lesbos is located just a few miles off the Turkish coast. A European holiday
                             destination for decades, Lesbos has earned a new reputation as the first frontier of a humanitarian
@@ -253,7 +247,8 @@
                         <p>“Twenty years ago there was a general feeling that it was better to give people commodities, like
                             blankets,” says Riddle. With its fairly developed infrastructure, Greece offered an ideal environment
                             to experiment, and offer refugees more agency. “It’s more humane and more respectful,” Riddle
-                            says.</p>
+                            says.
+                        </p>
 
                         <p>With the e-money, refugees were able to purchase whatever they felt they needed the most, as long
                             as it was available at the local stores. But it’s not only refugees who benefit. Rather than
@@ -302,7 +297,7 @@
                             <!--figure-img just adds some default Bootstrap sytling and padding
                                 img-fluid should make the figure resize with the container 
                                 float-right will place my figure inline, on the right-->
-                            <h3>Using Digital Currency, Aid Agencies Learn About Refugee Needs </h3>
+                            <h3>In Sub-Saharan Africa, Mobile Money Trumps Traditional Banking </h3>
                             <img src='mobile-money-viz.png' class="figure-img img-responsive float-right rounded center-block viz">
                             <div class="wnyccaption"> Source: Global Findex (World Bank)
                             </div>
@@ -338,8 +333,8 @@
                 </section>
             </div>
 
+        <!-- SIDEBAR DIV -->
             <div class='col-sm-4'>
-
                 <div>
                     <h1 class="h4 sidebar_header"> About Note to Self </h1>
                 </div>
@@ -347,18 +342,17 @@
                     The tech show about being human. Hosted by <a href="https://www.wnyc.org/people/manoush-zomorodi/">Manoush Zomorodi.</a><br>Produced
                     by <a href="https://www.wnyc.org/">WNYC</a>.
                 </p>
-                
-                
             </div>
-
         </div>
 
-
+        <!-- RELATED CONTENT DIV -->
         <div class="row" style="margin-left:5px;margin-bottom:30px">
-            <h1 class="h4 sidebar_header"> Related </h1>
-            <a href="AMCVKM_Final_Project_website_v1.html"> The Footprint on Refugees </a>
+            <h3 class="h4 sidebar_header"> Related </h3>
+            <span> Note to Self</span>
+            <br>
+            <h2> <a class="reference_head" href="AMCVKM_Final_Project_website_v1.html">  The Footprint on Refugees  </a> </h2>
         </div>
-        <!-- Sidebar div NEEDS TO BE FIXED AT 300PX-->
+        
 
 
         <!-- This is a fixed width column with info about the show.

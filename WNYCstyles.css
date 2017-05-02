@@ -1,31 +1,15 @@
 /* Here is my style guide */
 
-
-/* move the main text out of the way of the navbar */
-body {
-    padding-top: 50px;
-    font-family: 'Open Sans', 'Helvetica';
-}
-
-.wnyccaption{
-    font-size: 10px;
-    font-weight: 500;
-}
-
-/* Drop the padding for a column.  Helping to line up the images in the header */
-.no_padding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
-
-/* MASTHEAD AND NAVIGATION*/
-
-/* Match masthead styling to WNYC*/
+/*************************
+ MASTHEAD AND NAVIGATION
+ *************************/
+ 
 .wnycmast{
     background: #DE1E3D;
     height: 75px;
 }
 
+/* styling for the right side buttons in the masthead */
 .donate_button {
     border-color: rgba(255,255,255,.5);
     background-color: #DE1E3D;
@@ -42,8 +26,9 @@ body {
     min-height: 40px;
     max-height: 40px;
 }
+
 /* Overwrite Bootstrap native navbar stylings
-   Makes the text statis white and pink upon hover */
+   Makes the text static white and pink upon hover */
 .navbar-default .navbar-nav > li > a{
     color:#ffffff;
     text-shadow: 0 0px 0 rgba(255,255,255,.25);;
@@ -72,9 +57,9 @@ body {
     background-color: transparent;
   }
 
-/******
-   ATTEMPT TO GET MY MASTHEAD TO APPEAR ABOVE THE NAVBAR
-*******/
+/* Styles to create the "sticky navbar" effect */
+
+/* bootstrap 3 helpers */
 
 .navbar-form input, .form-inline input {
 	width:auto;
@@ -99,23 +84,25 @@ header {
     position: fixed;
     top: 80px;
 }
-        </style>
-    </head>
-
 
 /**********************
-   FUN WITH BUTTONS
+   HEADER STYLES
 **********************/
 
+.publishing_bug{
+    color:#ffffff;
+    font-size:14px;
+}
+
+/* Buttons */
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 6px;
   margin-bottom: 0;
   font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
+  font-weight: 500;
+  line-height: 1;
   text-align: center;
-  white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
@@ -124,86 +111,67 @@ header {
           user-select: none;
   background-image: none;
   border-radius: 4px;
-  padding: 10px 16px;
-}
-  
-.btn-lg {
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
+  letter-spacing: 1px;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #3276b1;
-  border-color: #285e8e;
-}
-
-/***********************
-  OUTLINE BUTTONS
-************************/
+/* Changing the button hover color */
 
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
     color: #ffffff;
 }
-.btn-primary.outline:active, .btn-primary.outline.active {
-    border-color: #007299;
-    color: #007299;
-    box-shadow: none;
-}
 
-/***********************
-  CUSTOM BTN VALUES
-************************/
-
-.btn {
-    padding: 14px 24px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
+/* Custom button values - applied to Queue and social media buttons */
 .wnyc_header_btn{
     background: none;
-    padding: 12px 22px;
-    border: 2px solid #686868;
+    padding: 12px 10px;
+    border: 2px solid #a6a6a6;
     color: #ffffff;
     border-radius: 26px;
-    font-size: 12px;
+    font-size: 11px;
     line-height: .8;
+    margin-top:20px;
+    margin-right:7px;
 }
 
 .wnyc_header_btn:hover {
-    color: #ffffff;
     border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
+/* Styling for the Listen button */
 .wnyc_listen_btn{
     background: #128cf4;
-    padding: 12px 22px;
+    padding: 12px 15px;
     border: none;
     color: #ffffff;
     border-radius: 26px;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1;
+    margin-top:20px;
+    margin-right:5px;
+}
+
+/* Specific styling for the round social media buttons */
+.wnyc_social_btn{
+    width: 37px;
+    height: 37px;
+    padding: 10px 10px;
+    line-height: 1.33;
+    border-radius: 25px;
+    float: right;
+    margin-right:10px;
 }
 
 /***********************
-  IMAGE HEADER
+      IMAGE HEADER
 ************************/
 
 .med_image_header{
     background-image: url("Fingerprinting_upsidedown_blurred.png");
+    background-position: left;
+    background-size: cover;
     padding-left: 40px;
+    padding-bottom: 25px;
 }
 
 .storyHeaderImage {
@@ -219,32 +187,44 @@ header {
     margin-bottom: 20px;
 }
 
-/* ARTICLE AND BODY 
-   Matching WNYC's basic body stylings */
+/******************************
+    HEADLINE, ARTICLE AND BODY 
+*******************************/
 
+.headline{
+    color:#ffffff;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* move the main text out of the way of the navbar */
+body {
+    padding-top: 50px;
+    font-family: 'Open Sans', 'Helvetica';
+}
+
+/* change the basic paragraph styling. Required because
+bootstrap makes it hard to override their presets! */
 p {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 24px;
 }
 
+a{
+    color:#000000;
+}
+
 .wnyccaption{
-    font-size:14px;
+    font-size: 10px;
+    font-weight: 500;
     margin-bottom: 24px;
 }
 
-/* Styling the column that runs along the right rail in larger viewports*/
-.aboutSidebar {
-    width: 300px;
-    font-size: 14px;
-}
-
-.sidebar_header {
-    color:#686868;
-    font-weight:bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 32px;
+/* Drop the padding for a column.  Helping to line up the images in the header */
+.no_padding {
+   padding-left: 0 !important;
+   margin: 0 !important;
 }
 
 /* Styling the Refugee Rights visualization */
@@ -252,3 +232,69 @@ p {
     max-height:580px;
     display: block;
 }
+
+/********************
+       SIDEBAR
+*********************/
+.aboutSidebar {
+    width: 300px;
+    font-size: 14px;
+}
+
+.sidebar_header {
+    color:#868686;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 32px;
+}
+
+/*********************
+  REFERENCE SECTION
+*********************/
+
+.reference_head{
+    font-weight: 700;
+}
+
+.reference_head:hover{
+    text-decoration: none;
+    color:#128cf4;
+}
+
+/********* MEDIA QUERIES ********/
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+    .med_image_header{
+        background-image: none;
+    }
+
+    .headline{
+        color:#000000;
+    }
+
+    .wnyc_header_btn{
+        color: #a6a6a6;
+    }
+
+    .wnyc_header_btn:hover {
+        border: 2px solid #6a6a6a;
+        color: #6a6a6a;
+    }
+
+    .wnyc_social_btn{
+        float: left;
+        margin-top: 20px;
+    }
+
+    .publishing_bug{
+        color:#000000;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
