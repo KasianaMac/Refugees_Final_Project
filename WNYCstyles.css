@@ -183,6 +183,7 @@ header {
     */
     background-position: center center;
     background-size: cover;
+    height: 300px;
 }
 
 .bottom_buffer{
@@ -238,6 +239,12 @@ a{
     max-height:580px;
     display: block;
 }
+
+/* Pulls the visualizations down, to align them at the bottom */
+.bottom_align {
+    bottom: 0;
+    right: 0;
+  }
 
 /********************
        SIDEBAR
