@@ -19,7 +19,10 @@
         <li> Mast_right_side_buttons - an image file of the Donate, Sign Up, and Login buttons from the WNYC masthead </li>
         <li> PrivacyPerson.jpg - the visualization of refugee's privacy rights </li>
         <li> Fingerprinting.jpg - a Creative Commons licensed photo, used in the head for the Refugee Privacy article </li>
-        <li> mobile-money-viz.png - our basic bar chart for the Mobile Money piece</li>
+        <li> mobile_graph.png - our basic bar chart for the Mobile Money piece</li>
+        <li> Traditional_graph.png - our basic bar chart showing traditional banking mechanisms for the Mobile Money piece </li>
+        <li> Refugees_Debit.jpg - photo from UNHCR of Syrian refugees using debit cards for cash assistance in Greece</li>
+        <li> Refugees_Debit_upsidedown_blurred.png - photo for the header of the mobile money piece</li>
     </li>
     <li>Visualization_Design_Rationale - rich text file, containing our explanation of design choices for our visualizations. </li>
-
+<li> Process_Reflection - word file, containing a post-mortem examination of the project </li>
