@@ -24,5 +24,7 @@
         <li> Refugees_Debit.jpg - photo from UNHCR of Syrian refugees using debit cards for cash assistance in Greece</li>
         <li> Refugees_Debit_upsidedown_blurred.png - photo for the header of the mobile money piece</li>
     </li>
+<h3> Other explanatory contents </h3>
     <li>Visualization_Design_Rationale - rich text file, containing our explanation of design choices for our visualizations. </li>
 <li> Process_Reflection - word file, containing a post-mortem examination of the project </li>
+<li> Project_screencast - a video walking through our website </li>
